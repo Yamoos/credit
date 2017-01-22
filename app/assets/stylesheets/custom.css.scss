@@ -1,0 +1,115 @@
+@import "bootstrap";
+
+body{
+	background: #E6EAEB;}
+ul{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;}
+
+.top-header{
+	overflow: hidden;
+	padding-top: 30px;
+	min-height: 203px;
+	background: url(header-bg.jpg) no-repeat;
+	background-size: cover;
+	font-size: 30px;
+	color: #fff;
+	h1 {
+		font-size: 40px;
+	    font-weight: 700;
+	}
+}
+
+
+.online-order{
+	margin-top: 50px;}
+.top-menu{
+	.navbar-default{
+	background-color: #2a3239;
+	border: 0;
+		li{
+			a{
+				color: #fff;
+			    font-size: 15px;
+			    text-transform: uppercase;
+			}
+		}
+	}
+}
+
+
+// .top-menu .navbar-default{
+// 	background-color: #2a3239;
+// 	border: 0;}
+
+// .top-menu .navbar-default .navbar-nav>li>a {
+//     color: #fff;
+//     font-size: 15px;
+//     text-transform: uppercase;}
+
+.top-menu .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #EA5954;
+    border-bottom: 2px solid #EA5954;
+    background-color: #2a3239;}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #EA5954;}
+
+header{
+	margin-bottom: 15px;}
+
+main{
+	padding: 20px;
+	border: 1px solid #D3D7D8;
+    background: #fff;
+    border-radius: 5px;
+    min-height: 300px;}
+
+.widget{
+	margin-bottom: 10px;}
+
+.title-widget{
+	border-radius: 5px;
+	margin-bottom: 5px;
+	background: #545d7e; /* Old browsers */
+	background: -moz-linear-gradient(left,  #545d7e 0%, #4a5e83 50%, #465f84 51%, #37628c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #545d7e 0%,#4a5e83 50%,#465f84 51%,#37628c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #545d7e 0%,#4a5e83 50%,#465f84 51%,#37628c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545d7e', endColorstr='#37628c',GradientType=1 ); /* IE6-9 */}
+
+.title-widget h2{
+	padding: 10px 0;
+	margin:0;
+	color: #fff;
+    font-size: 25px;
+    text-align: center;}
+
+.payment-system .content-widget{
+	background: rgba(0,0,0,0);
+    padding: 0;}
+
+.widget.payment-system{
+	padding-left: 0;
+    list-style: none;}
+
+.widget.payment-system ul li{
+	padding: 0 20px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	background: #fff;}
+
+.widget.payment-system li a{
+	padding: 15px 0;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;}
+
+.content-widget{
+	background: #fff url(widget-bg.png) no-repeat 0 bottom;
+	background-size: 100% auto;
+    padding: 20px;
+    border-radius: 5px;}
+
+footer{
+	background: #ccc;}

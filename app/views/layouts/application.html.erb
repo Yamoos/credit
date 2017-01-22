@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%= render 'layouts/header' %>
+  <div class="container main-content">
+    <div class="row">
+      <div class="col-md-8 col-md-push-4">
+        <main>
+    		<%= yield %>
+        </main>
+      </div>
+
+      <div class="col-md-4 col-md-pull-8">
+		 <%= render 'layouts/sitebar' %>
+      </div>
+    </div>
+  </div>
+
+   <%= render 'layouts/footer' %>
+  </body>
+</html>

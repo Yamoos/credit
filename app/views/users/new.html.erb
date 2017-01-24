@@ -1,0 +1,25 @@
+<% provide(:title, 'Sign up') %>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <h1>Регистрация</h1>
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+      <%= f.label :name, "Имя:" %>
+      <%= f.text_field :name %>
+      
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password, "Пароль:" %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Подтверждение пароля:" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Создать аккаунт", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+  
+</div>
+

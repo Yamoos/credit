@@ -1,4 +1,44 @@
 <header>
+    
+      <div class="navbar-inner navbar-inverse">
+        <div class="container">
+          <nav>
+            <ul class="nav navbar-nav navbar-right">
+            <% if signed_in? %>
+
+             
+              <li id="fat-menu" class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Сайт<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "Главная", '#' %></li>
+                  <li><%= link_to "Кредитные организации", '#' %></li>
+                  <li><%= link_to "Советы експертов", '#' %></li>
+                  <li><%= link_to "Рейтинг МФО", '#' %></li>
+                <li class="divider"></li>
+              </li>
+              </ul>
+              </li>
+             <li><%= link_to "Пользователи", '#' %></li>
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Профиль <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Просмотр", '#' %></li>
+                <li><%= link_to "Настройка", '#' %></li>
+                <li class="divider"></li>
+                <li><%= link_to "Выйти", signout_path, method: "delete" %></li>
+            </li>
+              </ul>
+            </li>
+            <li><%= link_to "Выйти", signout_path, method: "delete" %></li>
+          <% end %>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
     <div class="top-header">
       <div class="container">
         <div class="row">
